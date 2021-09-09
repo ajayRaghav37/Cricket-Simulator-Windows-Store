@@ -73,8 +73,8 @@
                 <TextBlock x:Name="ThisOverBar" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" FontFamily="Segoe UI" FontSize="20" TextAlignment="Right" Canvas.Left="100" Canvas.Top="70"/>
                 <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="Run Rate" VerticalAlignment="Top" Width="100" FontFamily="Segoe UI" FontSize="20" Canvas.Left="378"/>
                 <TextBlock x:Name="RunRate" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="100" FontFamily="Segoe UI" FontSize="20" TextAlignment="Right" Canvas.Left="500"/>
-                <TextBlock x:Name="lblWASP" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="WASP" VerticalAlignment="Top" Width="100" FontFamily="Segoe UI" FontSize="20" Canvas.Top="35" Canvas.Left="378"/>
-                <TextBlock x:Name="WASP" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="150" FontFamily="Segoe UI" FontSize="20" TextAlignment="Right" Canvas.Left="450" Canvas.Top="35"/>
+                <TextBlock x:Name="lblPjtTgt" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="Projected" VerticalAlignment="Top" Width="100" FontFamily="Segoe UI" FontSize="20" Canvas.Top="35" Canvas.Left="378"/>
+                <TextBlock x:Name="PjtTgt" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="100" FontFamily="Segoe UI" FontSize="20" TextAlignment="Right" Canvas.Left="500" Canvas.Top="35"/>
                 <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="Extras" VerticalAlignment="Top" Width="100" FontFamily="Segoe UI" FontSize="20" Canvas.Top="70" Canvas.Left="378"/>
                 <TextBlock x:Name="Extras" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="100" FontFamily="Segoe UI" FontSize="20" TextAlignment="Right" Canvas.Left="500" Canvas.Top="70"/>
             </Canvas>
@@ -301,28 +301,28 @@
                                 </DiscreteObjectKeyFrame.Value>
                             </DiscreteObjectKeyFrame>
                         </ObjectAnimationUsingKeyFrames>
-                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Left)" Storyboard.TargetName="lblWASP">
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Left)" Storyboard.TargetName="lblPjtTgt">
                             <DiscreteObjectKeyFrame KeyTime="0">
                                 <DiscreteObjectKeyFrame.Value>
                                     <x:Double>317</x:Double>
                                 </DiscreteObjectKeyFrame.Value>
                             </DiscreteObjectKeyFrame>
                         </ObjectAnimationUsingKeyFrames>
-                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Top)" Storyboard.TargetName="lblWASP">
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Top)" Storyboard.TargetName="lblPjtTgt">
                             <DiscreteObjectKeyFrame KeyTime="0">
                                 <DiscreteObjectKeyFrame.Value>
                                     <x:Double>35</x:Double>
                                 </DiscreteObjectKeyFrame.Value>
                             </DiscreteObjectKeyFrame>
                         </ObjectAnimationUsingKeyFrames>
-                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Left)" Storyboard.TargetName="WASP">
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Left)" Storyboard.TargetName="PjtTgt">
                             <DiscreteObjectKeyFrame KeyTime="0">
                                 <DiscreteObjectKeyFrame.Value>
                                     <x:Double>401</x:Double>
                                 </DiscreteObjectKeyFrame.Value>
                             </DiscreteObjectKeyFrame>
                         </ObjectAnimationUsingKeyFrames>
-                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Top)" Storyboard.TargetName="WASP">
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Top)" Storyboard.TargetName="PjtTgt">
                             <DiscreteObjectKeyFrame KeyTime="0">
                                 <DiscreteObjectKeyFrame.Value>
                                     <x:Double>35</x:Double>
@@ -350,7 +350,7 @@
                                 </DiscreteObjectKeyFrame.Value>
                             </DiscreteObjectKeyFrame>
                         </ObjectAnimationUsingKeyFrames>
-                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="WASP">
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="PjtTgt">
                             <DiscreteObjectKeyFrame KeyTime="0">
                                 <DiscreteObjectKeyFrame.Value>
                                     <x:Double>63</x:Double>
@@ -364,7 +364,7 @@
                                 </DiscreteObjectKeyFrame.Value>
                             </DiscreteObjectKeyFrame>
                         </ObjectAnimationUsingKeyFrames>
-                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="lblWASP">
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="lblPjtTgt">
                             <DiscreteObjectKeyFrame KeyTime="0">
                                 <DiscreteObjectKeyFrame.Value>
                                     <x:Double>84</x:Double>
@@ -985,14 +985,14 @@
                                 </DiscreteObjectKeyFrame.Value>
                             </DiscreteObjectKeyFrame>
                         </ObjectAnimationUsingKeyFrames>
-                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Left)" Storyboard.TargetName="lblWASP">
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Left)" Storyboard.TargetName="lblPjtTgt">
                             <DiscreteObjectKeyFrame KeyTime="0">
                                 <DiscreteObjectKeyFrame.Value>
                                     <x:Double>2</x:Double>
                                 </DiscreteObjectKeyFrame.Value>
                             </DiscreteObjectKeyFrame>
                         </ObjectAnimationUsingKeyFrames>
-                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Left)" Storyboard.TargetName="WASP">
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Left)" Storyboard.TargetName="PjtTgt">
                             <DiscreteObjectKeyFrame KeyTime="0">
                                 <DiscreteObjectKeyFrame.Value>
                                     <x:Double>100</x:Double>
@@ -1027,14 +1027,14 @@
                                 </DiscreteObjectKeyFrame.Value>
                             </DiscreteObjectKeyFrame>
                         </ObjectAnimationUsingKeyFrames>
-                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Top)" Storyboard.TargetName="lblWASP">
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Top)" Storyboard.TargetName="lblPjtTgt">
                             <DiscreteObjectKeyFrame KeyTime="0">
                                 <DiscreteObjectKeyFrame.Value>
                                     <x:Double>60</x:Double>
                                 </DiscreteObjectKeyFrame.Value>
                             </DiscreteObjectKeyFrame>
                         </ObjectAnimationUsingKeyFrames>
-                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Top)" Storyboard.TargetName="WASP">
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Canvas.Top)" Storyboard.TargetName="PjtTgt">
                             <DiscreteObjectKeyFrame KeyTime="0">
                                 <DiscreteObjectKeyFrame.Value>
                                     <x:Double>60</x:Double>
@@ -1090,7 +1090,7 @@
                                 </DiscreteObjectKeyFrame.Value>
                             </DiscreteObjectKeyFrame>
                         </ObjectAnimationUsingKeyFrames>
-                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="WASP">
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="PjtTgt">
                             <DiscreteObjectKeyFrame KeyTime="0">
                                 <DiscreteObjectKeyFrame.Value>
                                     <x:Double>50</x:Double>
@@ -1132,7 +1132,7 @@
                                 </DiscreteObjectKeyFrame.Value>
                             </DiscreteObjectKeyFrame>
                         </ObjectAnimationUsingKeyFrames>
-                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="lblWASP">
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="lblPjtTgt">
                             <DiscreteObjectKeyFrame KeyTime="0">
                                 <DiscreteObjectKeyFrame.Value>
                                     <x:Double>98</x:Double>

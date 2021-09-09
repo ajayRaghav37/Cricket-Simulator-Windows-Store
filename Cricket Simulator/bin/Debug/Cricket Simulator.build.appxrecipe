@@ -3,11 +3,9 @@
   <PropertyGroup>
     <Machine>MEPHISTO</Machine>
     <WindowsUser>Ajay Raghav</WindowsUser>
-    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>36248ANIco.in.CricketSimulator</PackageIdentityName>
-    <IntermediateOutputPath>D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\AppxManifest.xml">

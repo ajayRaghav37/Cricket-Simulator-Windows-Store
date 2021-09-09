@@ -3,30 +3,27 @@
   <PropertyGroup>
     <Machine>MEPHISTO</Machine>
     <WindowsUser>Ajay Raghav</WindowsUser>
-    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>36248ANIco.in.CricketSimulator</PackageIdentityName>
-    <IntermediateOutputPath>D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>470A0EEE5FAC9375113AECD4AE90F85F39F5CF8B670382D0F0F80E2F67A8AC20</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>311E402EB51AAF9DACA7BFE9E8531A6853A323033AD4B08E8FE2EB8E9175CEFE</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>36248ANIco.in.CricketSimulator_1.0.2.35_neutral__2x8r78dx3dx7r</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>36248ANIco.in.CricketSimulator_2x8r78dx3dx7r!App</RegisteredUserModeAppID>
     <RegisteredPackageID>36248ANIco.in.CricketSimulator</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=1ED90121-0E00-43DD-B6A0-52121779E830</RegisteredPackagePublisher>
     <RegisteredVersion>1.0.2.35</RegisteredVersion>
-    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-01-03T18:55:30.994</Modified>
+      <Modified>2014-02-04T14:09:50.972</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\Cricket Simulator.exe">
       <PackagePath>Cricket Simulator.exe</PackagePath>
-      <Modified>2015-01-03T18:55:30.038</Modified>
+      <Modified>2014-02-04T14:09:49.972</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
@@ -63,7 +60,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
-      <Modified>2014-02-15T18:17:09.129</Modified>
+      <Modified>2013-05-30T04:50:15.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
@@ -71,7 +68,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-01-03T18:55:30.584</Modified>
+      <Modified>2014-02-04T14:09:50.659</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

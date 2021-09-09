@@ -28,13 +28,12 @@ Public NotInheritable Class MainPage
     Protected Overrides Sub SaveState(pageState As Dictionary(Of String, Object))
 
     End Sub
-    '#Region "Declarations"
+#Region "Declarations"
     Public TempStr As String
     Public Wickets As Byte
     Public Runs As Integer
     Public Balls As Integer
     Public TempNum As Integer
-    Public RemBalls As Integer
     Public Randomizer As New Random
     Public InningNum As Byte
     Public FullCommentary As String
@@ -61,64 +60,22 @@ Public NotInheritable Class MainPage
     Public Tgt As Integer
     Public Tgt1 As Integer
     Public Tgt2 As Integer
-    Public WASPscore As Integer
+    Public PjtWkt As Integer
+    Public PjtBll As Integer
     Public Rqpo As Double
     Public MatchResult As String
     Public Uncertainty As Long
     Public MatchSummary As String
     Public HistoryCS As String = ""
     Public GamesInHistory As Integer
-    Public RequiredRate As Double = 6
     Const HelpText As String = "INTRODUCTION" & vbNewLine & "___________________________________________________" & vbNewLine & vbNewLine & "Cricket Simulator is designed to have fun with random (or custom) cricket match scenarios with exclusive real-like commentary." & vbNewLine & vbNewLine & "INSTRUCTIONS" & vbNewLine & "___________________________________________________" & vbNewLine & vbNewLine & "A match is started by selecting two teams, the format of the game and then clicking on 'Flip Coin' for the toss. The winning captain can choose to bowl or to bat depending upon the pitch conditions. Once you click 'Start Match', the score board appears. You can choose from 'Play Random' or play 'Custom' to continue the proceedings. The full commentary is visible in a textbox on right/bottom." & vbNewLine & vbNewLine & "USE OF CRICKET SIMULATOR" & vbNewLine & "___________________________________________________" & vbNewLine & vbNewLine & "Cricket Simulator can be used to gamble, check luck, record local matches, predict upcoming matches or even to pass the time." & vbNewLine & vbNewLine & "HISTORY" & vbNewLine & "___________________________________________________" & vbNewLine & vbNewLine & "Cricket Simulator provides the facility to view the history of the matches you witnessed. Click on the 'History' button in the game to view this information. You can also 'Clear history' from the app bar." & vbNewLine & vbNewLine & "COMMENTARY" & vbNewLine & "___________________________________________________" & vbNewLine & vbNewLine & "Cricket Simulator features two types of commentary - automatic and custom. The automatic commentary is the default and is available in both, random and custom scenarios. The custom commentary can only be used when adding custom deliveries/events to the game. You can copy the whole commentary from the app bar." & vbNewLine & vbNewLine & "ABOUT" & vbNewLine & "___________________________________________________" & vbNewLine & vbNewLine & "Cricket Simulator 1.0.2.23" & vbNewLine & "Copyright © 2012 ANIco.in" & vbNewLine & "Licensed as freeware" & vbNewLine & vbNewLine & "DISCLAIMER" & vbNewLine & "___________________________________________________" & vbNewLine & vbNewLine & "All the team logos, team names and their captain names are the sole property of International Cricket Council (and the respective boards) and are protected by trademark and/or other pending or existing intellectual property rights. Emphasis is to be laid on the fact that we don't own ICC, other cricketing boards or any part of them. Cricket Simulator is designed only for entertainment purpose and is completely non-profit."
     Public RoamSet = Windows.Storage.ApplicationData.Current.RoamingSettings
     Public Formatter As DateTimeFormatter = New DateTimeFormatter("longdate")
     Public DatPack As New DataPackage()
-    Public BatsmanOutChance As Integer
-    Public BowlerStrikeRate As Integer
-    Public BowlerOutChance As Integer
-    Public WicketChance As Integer
-    Public DotChance As Integer
-    Public PercentRuns4 As Integer
-    Public PercentRuns6 As Integer
-    Public PercentRuns3 As Integer
-    Public PercentRunsExtra As Integer
-    Public PercentRuns2 As Integer
-    Public PercentRuns1 As Integer
-    Public FourChance As Integer
-    Public SixChance As Integer
-    Public ThreeChance As Integer
-    Public DoubleChance As Integer
-    Public ExtraChance As Integer
-    Public SingleChance As Integer
-    Public WideChanceFrom As Integer
-    Public WideChanceTo As Integer
-    Public NoBallChanceFrom As Integer
-    Public NoBallChanceTo As Integer
-    Public ByeChanceFrom As Integer
-    'Public ByeChanceTo As Integer
-    Public Wide4ChanceFrom As Integer
-    Public Wide4ChanceTo As Integer
-    Public FiveChanceFrom As Integer
-    'Public FiveChanceTo As Integer
-    Public DeadBallChanceFrom As Integer
-    Public DeadBallChanceTo As Integer
-    Public AppealChanceFrom As Integer
-    Public AppealChanceTo As Integer
-    Public ThreeChanceFrom As Integer
-    Public ThreeChanceTo As Integer
-    Public SingleChanceFrom As Integer
-    Public SingleChanceTo As Integer
-    Public DoubleChanceFrom As Integer
-    Public DoubleChanceTo As Integer
-    Public FourChanceFrom As Integer
-    Public FourChanceTo As Integer
-    Public SixChanceFrom As Integer
-    Public SixChanceTo As Integer
-    Public WicketChanceFrom As Integer
-    Public WicketChanceTo As Integer
-    '#Region "Event Procedures"
+#End Region
+#Region "Event Procedures"
     Private Sub MainPage_Loaded(sender As Object, e As RoutedEventArgs) Handles Me.Loaded
-        TypeofPitch = Randomizer.Next(3) + 3
+        TypeofPitch = Randomizer.Next(3)
         ScoreArea.Visibility = Windows.UI.Xaml.Visibility.Collapsed
         btnBat.Visibility = Windows.UI.Xaml.Visibility.Collapsed
         btnBowl.Visibility = Windows.UI.Xaml.Visibility.Collapsed
@@ -487,9 +444,9 @@ Public NotInheritable Class MainPage
             Case 2 : AddNewComment("Batting first is always a symbol of confidence.")
             Case 3
                 Select Case TypeofPitch
-                    Case 3 : AddNewComment("Great decision to be batting first on a batting pitch.")
-                    Case 4 : AddNewComment(TossW & " have decided to bat first. But it doesn't really matter who bat first on this pitch. It is always a tough contest.")
-                    Case 5 : AddNewComment("Batting first on a bowling pitch! That scares me a bit!")
+                    Case 0 : AddNewComment("Great decision to be batting first on a batting pitch.")
+                    Case 1 : AddNewComment(TossW & " have decided to bat first. But it doesn't really matter who bat first on this pitch. It is always a tough contest.")
+                    Case 2 : AddNewComment("Batting first on a bowling pitch! That scares me a bit!")
                 End Select
         End Select
         btnBat.Visibility = Windows.UI.Xaml.Visibility.Collapsed
@@ -507,9 +464,9 @@ Public NotInheritable Class MainPage
             Case 2 : AddNewComment("Bowling first is always a symbol of having faith in bowlers and confidence in batsman.")
             Case 3
                 Select Case TypeofPitch
-                    Case 3 : AddNewComment("Strange decision to be bowling first on a batting pitch. There must be an undercover plan in " & CaptainName(TossW) & "'s mind.")
-                    Case 4 : AddNewComment(TossW & " have decided to bowl first. But it doesn't really matter what you choose on this pitch. It is always a tough contest.")
-                    Case 5 : AddNewComment("Great decision to be bowling first on a bowling pitch.")
+                    Case 0 : AddNewComment("Strange decision to be bowling first on a batting pitch. There must be an undercover plan in " & CaptainName(TossW) & "'s mind.")
+                    Case 1 : AddNewComment(TossW & " have decided to bowl first. But it doesn't really matter what you choose on this pitch. It is always a tough contest.")
+                    Case 2 : AddNewComment("Great decision to be bowling first on a bowling pitch.")
                 End Select
         End Select
         btnBat.Visibility = Windows.UI.Xaml.Visibility.Collapsed
@@ -560,9 +517,9 @@ Public NotInheritable Class MainPage
         ElseIf btnStart.Content = "Start Match" Then
             ScoreArea.Visibility = Windows.UI.Xaml.Visibility.Visible
             Select Case TypeofPitch
-                Case 3 : Update1.Text = "Pitch might favor batting"
-                Case 4 : Update1.Text = "Expect a great contest of bat and ball"
-                Case 5 : Update1.Text = "Wet bowling pitch today"
+                Case 0 : Update1.Text = "Pitch might favor batting"
+                Case 1 : Update1.Text = "Expect a great contest of bat and ball"
+                Case 2 : Update1.Text = "Wet bowling pitch today"
             End Select
             If Decis = "bat" Then
                 BattingTeam.Text = TossW
@@ -578,25 +535,15 @@ Public NotInheritable Class MainPage
             PlayRandX.Visibility = Windows.UI.Xaml.Visibility.Visible
             btnAction.Focus(Windows.UI.Xaml.FocusState.Pointer)
             Select Case TypeofPitch
-                Case 3 : AddNewComment(vbNewLine & BattingTeam.Text & " is ready for a flying start.")
-                Case 4 : AddNewComment(vbNewLine & BattingTeam.Text & " would want to put a good score on the board.")
-                Case 5 : AddNewComment(vbNewLine & "Is " & BattingTeam.Text & " really prepared for the flood of wickets?")
+                Case 0 : AddNewComment(vbNewLine & BattingTeam.Text & " is ready for a flying start.")
+                Case 1 : AddNewComment(vbNewLine & BattingTeam.Text & " would want to put a good score on the board.")
+                Case 2 : AddNewComment(vbNewLine & "Is " & BattingTeam.Text & " really prepared for the flood of wickets?")
             End Select
-            RequiredRate = ((4 + (2 * (5 - TypeofPitch))) / 100) * (80 + ((300 - TotalBalls) / 3))
-            WASPscore = GetWASPscore()
-            WASP.Text = WASPscore
-            'If RemBalls < TotalBalls - Balls Then
-            '    RequiredRate -= 5 / TotalBalls
-            'Else
-            '    If WASPscore > (TotalBalls / 100) * (80 + ((300 - TotalBalls) / 3)) Then
-            '        RequiredRate += 5 / TotalBalls
-            '    End If
-            'End If
         Else
             ScoreArea.Visibility = Windows.UI.Xaml.Visibility.Collapsed
             btnBat.Visibility = Windows.UI.Xaml.Visibility.Collapsed
             btnBowl.Visibility = Windows.UI.Xaml.Visibility.Collapsed
-            TypeofPitch = Randomizer.Next(3) + 3
+            TypeofPitch = Randomizer.Next(3)
             btnStart.Content = "Flip Coin"
             t1.IsEnabled = True
             t2.IsEnabled = True
@@ -610,10 +557,11 @@ Public NotInheritable Class MainPage
             Balls = 0
             WktCont = 0
             WktCont2 = 0
+            lblPjtTgt.Text = "Projected"
             Score.Text = "0/0"
             Overs.Text = "0"
             RunRate.Text = "0"
-            WASP.Text = "0"
+            PjtTgt.Text = "0"
             Extras.Text = "0"
             ThisOverBar.Text = ""
             LastBall = ""
@@ -730,8 +678,8 @@ Public NotInheritable Class MainPage
             End If
         End If
     End Sub
-    '#End Region
-    '#Region "User Procedures"
+#End Region
+#Region "User Procedures"
     Public Sub AddComment(Commentary As String)
         FullCommentary = FullCommentary & vbNewLine & Commentary
         If tgbComment.IsChecked = True Then
@@ -836,49 +784,35 @@ Public NotInheritable Class MainPage
         Else
             RunRate.Text = "0"
         End If
-        WASPscore = GetWASPscore()
+        If Wickets <> 0 Then
+            PjtWkt = Math.Round(10 * Runs / Wickets)
+        Else
+            PjtWkt = 0
+        End If
+        PjtBll = Math.Round(RunRate.Text * TotalBalls / 6)
         If InningNum = 1 Then
-            WASP.Text = WASPscore
-            If Balls Mod 6 = 0 Then
-                If RemBalls < TotalBalls - Balls Then
-                    RequiredRate -= 6 / TotalBalls
-                Else
-                    If WASPscore > (TotalBalls / 100) * (80 + ((300 - TotalBalls) / 3)) And RequiredRate < (4 + (240 - TotalBalls) / 60 + 2 * (5 - TypeofPitch)) + (Balls * 5 / TotalBalls) Then
-                        RequiredRate += 6 / TotalBalls
-                    End If
-                End If
+            If PjtWkt < PjtBll And Wickets <> 0 Then
+                PjtTgt.Text = PjtWkt
+            Else
+                PjtTgt.Text = PjtBll
             End If
         Else
-            Dim WASPpercent As Integer
-            If WASPscore > Tgt1 Then
-                WASPpercent = Math.Round(75 + (WASPscore - Tgt) * (Balls / TotalBalls), 0)
-            ElseIf WASPscore < Tgt2 Then
-                WASPpercent = Math.Round(25 + (WASPscore - Tgt) * (Balls / TotalBalls), 0)
-            ElseIf Runs >= Tgt Then
-                WASPpercent = 100
-            Else
-                WASPpercent = Math.Round(50 + (WASPscore - Tgt) * 10 * (Balls / TotalBalls), 0)
-            End If
-            If WASPpercent > 100 Then
-                WASP.Text = "100"
-            ElseIf WASPpercent < 0 Then
-                WASP.Text = "0"
-            Else
-                WASP.Text = WASPpercent
-            End If
-            WASP.Text = WASP.Text & "% (Tgt " & Tgt & ")"
-            RequiredRate = Math.Round((Tgt - Runs) * 6 / (TotalBalls - Balls), 2)
             If (Tgt - Runs) * 6 / (TotalBalls - Balls) > 36 Then
                 Update2.Text = BowlingTeam & " need to avoid extra runs to win"
-            ElseIf (WASPscore < Tgt2) And RemBalls < TotalBalls - Balls Then
+            ElseIf (PjtWkt < Tgt2) And (Wickets <> 0) Then
                 Update2.Text = BowlingTeam & " need " & WriteStr((10 - Wickets), "wicket") & " to win"
-            ElseIf (WASPscore > Tgt1) Then
+            ElseIf (PjtWkt > Tgt1) And (PjtBll > Tgt1) Then
                 Update2.Text = BattingTeam.Text & " need " & WriteStr((Tgt - Runs), "run") & " to win"
             Else
-                If RemBalls < TotalBalls - Balls Then
+                If PjtWkt < PjtBll And Wickets <> 0 Then
                     Update2.Text = BattingTeam.Text & " need " & WriteStr((Tgt - Runs), "run") & " with " & WriteStr(10 - Wickets, "wicket") & " in hand"
                 Else
-                    Update2.Text = BattingTeam.Text & " need " & WriteStr((Tgt - Runs), "run") & " in " & WriteStr(TotalBalls - Balls, "ball") & " at " & WriteStr(RequiredRate, "run") & " per over"
+                    Rqpo = Math.Round((Tgt - Runs) * 6 / (TotalBalls - Balls), 2)
+                    If Rqpo < 3 Then
+                        Update2.Text = BattingTeam.Text & " need " & WriteStr((Tgt - Runs), "run") & " to win"
+                    Else
+                        Update2.Text = BattingTeam.Text & " need " & WriteStr((Tgt - Runs), "run") & " in " & WriteStr(TotalBalls - Balls, "ball") & " at " & WriteStr(Rqpo, "run") & " per over"
+                    End If
                 End If
             End If
         End If
@@ -954,28 +888,28 @@ Public NotInheritable Class MainPage
             Case 2 : FullCommentary = "We are back with the one-off " & t3.SelectedItem & " game between " & t1.SelectedItem & " and " & t2.SelectedItem & "."
             Case 3 : FullCommentary = "All eyes are on this fantastic game of " & t1.SelectedItem & " and " & t2.SelectedItem & " " & t3.SelectedItem & "."
         End Select
-        ExpectedScore = 0.8 * TotalBalls + 72 - ((TypeofPitch - 3) * TotalBalls / 4)
+        ExpectedScore = 0.8 * TotalBalls + 72 - (TypeofPitch * TotalBalls / 4)
         ExpectedScore = ExpectedScore / 10
         ExpectedScore = ExpectedScore * 10
         TempNum = Randomizer.Next(3)
         Select Case TempNum
             Case 0
                 Select Case TypeofPitch
-                    Case 3 : AddComment(vbNewLine & "The surface is hard. There are few cracks on the pitch that might support spin as the game progress. But overall, we expect a huge score on the board on this batting track.")
-                    Case 4 : AddComment(vbNewLine & "This is a cricketing pitch. The ball will come nicely on the bat. But this strong wind may provide some swing to the fast bowlers.")
-                    Case 5 : AddComment(vbNewLine & "A wet pitch it is for this game. Bowlers should anticipate much from this game. There will be an uneven bounce causing troubles for the batsman.")
+                    Case 0 : AddComment(vbNewLine & "The surface is hard. There are few cracks on the pitch that might support spin as the game progress. But overall, we expect a huge score on the board on this batting track.")
+                    Case 1 : AddComment(vbNewLine & "This is a cricketing pitch. The ball will come nicely on the bat. But this strong wind may provide some swing to the fast bowlers.")
+                    Case 2 : AddComment(vbNewLine & "A wet pitch it is for this game. Bowlers should anticipate much from this game. There will be an uneven bounce causing troubles for the batsman.")
                 End Select
             Case 1
                 Select Case TypeofPitch
-                    Case 3 : AddComment(vbNewLine & "The pitch is dry and flat. And there is no grass to show any sign of smile on bowlers' face. Batsmen out of form have a great chance of comeback today.")
-                    Case 4 : AddComment(vbNewLine & "A normal unbiased pitch it is. It doesn't really matter who win the toss today. The game may go either side.")
-                    Case 5 : AddComment(vbNewLine & "This pitch is a real test of batsman. It has got bounce that might make even the greatest batsman going 'chin dance'. The captain winning the toss has to bowl first.")
+                    Case 0 : AddComment(vbNewLine & "The pitch is dry and flat. And there is no grass to show any sign of smile on bowlers' face. Batsmen out of form have a great chance of comeback today.")
+                    Case 1 : AddComment(vbNewLine & "A normal unbiased pitch it is. It doesn't really matter who win the toss today. The game may go either side.")
+                    Case 2 : AddComment(vbNewLine & "This pitch is a real test of batsman. It has got bounce that might make even the greatest batsman going 'chin dance'. The captain winning the toss has to bowl first.")
                 End Select
             Case 2
                 Select Case TypeofPitch
-                    Case 3 : AddComment(vbNewLine & "This is a batting surface. Crowd will be delighted to see some big hittings off the bowlers for 4s and 6s. Scores of even " & ExpectedScore & "-" & (ExpectedScore + 10) & " might not be enough.")
-                    Case 4 : AddComment(vbNewLine & "On an average track like this, we do not expect a huge score. Something like " & ExpectedScore & "-" & (ExpectedScore + 10) & " might be a good score.")
-                    Case 5 : AddComment(vbNewLine & "This track honestly has got nothing for the batsman. Wickets will be falling apart throughout the game. Even the scores of " & ExpectedScore & "-" & (ExpectedScore + 10) & " might prove to be challenging ones.")
+                    Case 0 : AddComment(vbNewLine & "This is a batting surface. Crowd will be delighted to see some big hittings off the bowlers for 4s and 6s. Scores of even " & ExpectedScore & "-" & (ExpectedScore + 10) & " might not be enough.")
+                    Case 1 : AddComment(vbNewLine & "On an average track like this, we do not expect a huge score. Something like " & ExpectedScore & "-" & (ExpectedScore + 10) & " might be a good score.")
+                    Case 2 : AddComment(vbNewLine & "This track honestly has got nothing for the batsman. Wickets will be falling apart throughout the game. Even the scores of " & ExpectedScore & "-" & (ExpectedScore + 10) & " might prove to be challenging ones.")
                 End Select
         End Select
         TempNum = Randomizer.Next(3)
@@ -988,12 +922,208 @@ Public NotInheritable Class MainPage
             Case 1
                 AddComment(vbNewLine & CaptainName(t1.SelectedItem) & " and " & CaptainName(t2.SelectedItem) & " along with the match referee are ready for the toss.")
             Case 2
-                If TypeofPitch <> 4 Then
+                If TypeofPitch <> 1 Then
                     AddComment(vbNewLine & "Toss might be crucial on a pitch like this. We are ready with " & CaptainName(t1.SelectedItem) & " and " & CaptainName(t2.SelectedItem) & " for the toss.")
                 Else
                     AddComment(vbNewLine & "There is not much in the toss really. On the middle, are " & CaptainName(t1.SelectedItem) & " and " & CaptainName(t2.SelectedItem) & " waiting the toss.")
                 End If
         End Select
+    End Sub
+    Public Sub RandomResult(Optional WithoutComment As Boolean = False)
+        Dim RandomNumber As Integer
+        RandomNumber = Randomizer.Next(1000)
+        If FreeHit Then
+            Select Case RandomNumber
+                Case 1 To 20 : BallResult = "wd"
+                Case 31 To 35 : BallResult = "nb"
+                Case 41 : BallResult = "b"
+                Case 43 To 44 : BallResult = "4wd"
+                Case 45 To 46 : BallResult = "db"
+                Case 47 : BallResult = "5"
+                Case 48 To 77 : BallResult = "a/f"
+                Case 78 To 87 : BallResult = "3"
+                Case 101 To 280 : BallResult = "1"
+                Case 281 To 360 : BallResult = "2"
+                Case 361 To 550 : BallResult = "4"
+                Case 551 To 800 : BallResult = "6"
+                Case 801 To 900 : BallResult = "W"
+                Case Else : BallResult = "dot"
+            End Select
+            If Not WithoutComment Then
+                RandomCommentary(BallResult)
+            End If
+            Exit Sub
+        End If
+        Select Case TotalBalls
+            Case 300
+                Select Case TypeofPitch
+                    Case 0
+                        Select Case RandomNumber
+                            Case 1 To 20 : BallResult = "wd"
+                            Case 31 To 35 : BallResult = "nb"
+                            Case 41 : BallResult = "b"
+                            Case 43 To 44 : BallResult = "4wd"
+                            Case 45 To 46 : BallResult = "db"
+                            Case 47 : BallResult = "5"
+                            Case 48 To 77 : BallResult = "a/f"
+                            Case 78 To 87 : BallResult = "3"
+                            Case 101 To 250 : BallResult = "1"
+                            Case 301 To 350 : BallResult = "2"
+                            Case 501 To 650 : BallResult = "4"
+                            Case 701 To 710 : BallResult = "6"
+                            Case 801 To 820 : BallResult = "W"
+                            Case Else : BallResult = "dot"
+                        End Select
+                    Case 1
+                        Select Case RandomNumber
+                            Case 1 To 20 : BallResult = "wd"
+                            Case 31 To 35 : BallResult = "nb"
+                            Case 41 : BallResult = "b"
+                            Case 43 To 44 : BallResult = "4wd"
+                            Case 45 To 46 : BallResult = "db"
+                            Case 47 : BallResult = "5"
+                            Case 48 To 77 : BallResult = "a/f"
+                            Case 78 To 92 : BallResult = "3"
+                            Case 101 To 300 : BallResult = "1"
+                            Case 301 To 380 : BallResult = "2"
+                            Case 501 To 600 : BallResult = "4"
+                            Case 701 To 707 : BallResult = "6"
+                            Case 801 To 830 : BallResult = "W"
+                            Case Else : BallResult = "dot"
+                        End Select
+                    Case 2
+                        Select Case RandomNumber
+                            Case 1 To 20 : BallResult = "wd"
+                            Case 31 To 35 : BallResult = "nb"
+                            Case 41 : BallResult = "b"
+                            Case 43 To 44 : BallResult = "4wd"
+                            Case 45 To 46 : BallResult = "db"
+                            Case 47 : BallResult = "5"
+                            Case 48 To 77 : BallResult = "a/f"
+                            Case 78 To 97 : BallResult = "3"
+                            Case 101 To 280 : BallResult = "1"
+                            Case 301 To 390 : BallResult = "2"
+                            Case 501 To 575 : BallResult = "4"
+                            Case 701 To 704 : BallResult = "6"
+                            Case 801 To 840 : BallResult = "W"
+                            Case Else : BallResult = "dot"
+                        End Select
+                End Select
+            Case 120
+                Select Case TypeofPitch
+                    Case 0
+                        Select Case RandomNumber
+                            Case 1 To 20 : BallResult = "wd"
+                            Case 31 To 35 : BallResult = "nb"
+                            Case 41 : BallResult = "b"
+                            Case 43 To 44 : BallResult = "4wd"
+                            Case 45 To 46 : BallResult = "db"
+                            Case 47 : BallResult = "5"
+                            Case 48 To 87 : BallResult = "a/f"
+                            Case 88 To 97 : BallResult = "3"
+                            Case 101 To 340 : BallResult = "1"
+                            Case 341 To 420 : BallResult = "2"
+                            Case 501 To 700 : BallResult = "4"
+                            Case 701 To 730 : BallResult = "6"
+                            Case 801 To 840 : BallResult = "W"
+                            Case Else : BallResult = "dot"
+                        End Select
+                    Case 1
+                        Select Case RandomNumber
+                            Case 1 To 20 : BallResult = "wd"
+                            Case 31 To 35 : BallResult = "nb"
+                            Case 41 : BallResult = "b"
+                            Case 43 To 44 : BallResult = "4wd"
+                            Case 45 To 46 : BallResult = "db"
+                            Case 47 : BallResult = "5"
+                            Case 48 To 87 : BallResult = "a/f"
+                            Case 88 To 102 : BallResult = "3"
+                            Case 103 To 352 : BallResult = "1"
+                            Case 353 To 452 : BallResult = "2"
+                            Case 501 To 650 : BallResult = "4"
+                            Case 701 To 720 : BallResult = "6"
+                            Case 801 To 860 : BallResult = "W"
+                            Case Else : BallResult = "dot"
+                        End Select
+                    Case 2
+                        Select Case RandomNumber
+                            Case 1 To 20 : BallResult = "wd"
+                            Case 31 To 35 : BallResult = "nb"
+                            Case 41 : BallResult = "b"
+                            Case 43 To 44 : BallResult = "4wd"
+                            Case 45 To 46 : BallResult = "db"
+                            Case 47 : BallResult = "5"
+                            Case 48 To 87 : BallResult = "a/f"
+                            Case 88 To 107 : BallResult = "3"
+                            Case 108 To 307 : BallResult = "1"
+                            Case 308 To 408 : BallResult = "2"
+                            Case 501 To 600 : BallResult = "4"
+                            Case 701 To 710 : BallResult = "6"
+                            Case 801 To 880 : BallResult = "W"
+                            Case Else : BallResult = "dot"
+                        End Select
+                End Select
+            Case 60
+                Select Case TypeofPitch
+                    Case 0
+                        Select Case RandomNumber
+                            Case 1 To 20 : BallResult = "wd"
+                            Case 31 To 35 : BallResult = "nb"
+                            Case 41 : BallResult = "b"
+                            Case 43 To 44 : BallResult = "4wd"
+                            Case 45 To 46 : BallResult = "db"
+                            Case 47 : BallResult = "5"
+                            Case 48 To 97 : BallResult = "a/f"
+                            Case 98 To 107 : BallResult = "3"
+                            Case 108 To 407 : BallResult = "1"
+                            Case 408 To 507 : BallResult = "2"
+                            Case 508 To 757 : BallResult = "4"
+                            Case 801 To 860 : BallResult = "6"
+                            Case 901 To 980 : BallResult = "W"
+                            Case Else : BallResult = "dot"
+                        End Select
+                    Case 1
+                        Select Case RandomNumber
+                            Case 1 To 20 : BallResult = "wd"
+                            Case 31 To 35 : BallResult = "nb"
+                            Case 41 : BallResult = "b"
+                            Case 43 To 44 : BallResult = "4wd"
+                            Case 45 To 46 : BallResult = "db"
+                            Case 47 : BallResult = "5"
+                            Case 48 To 97 : BallResult = "a/f"
+                            Case 98 To 112 : BallResult = "3"
+                            Case 113 To 427 : BallResult = "1"
+                            Case 428 To 552 : BallResult = "2"
+                            Case 553 To 752 : BallResult = "4"
+                            Case 753 To 797 : BallResult = "6"
+                            Case 801 To 920 : BallResult = "W"
+                            Case Else : BallResult = "dot"
+                        End Select
+                    Case 2
+                        Select Case RandomNumber
+                            Case 1 To 20 : BallResult = "wd"
+                            Case 31 To 35 : BallResult = "nb"
+                            Case 41 : BallResult = "b"
+                            Case 43 To 44 : BallResult = "4wd"
+                            Case 45 To 46 : BallResult = "db"
+                            Case 47 : BallResult = "5"
+                            Case 48 To 97 : BallResult = "a/f"
+                            Case 98 To 117 : BallResult = "3"
+                            Case 118 To 367 : BallResult = "1"
+                            Case 368 To 492 : BallResult = "2"
+                            Case 501 To 675 : BallResult = "4"
+                            Case 701 To 730 : BallResult = "6"
+                            Case 801 To 960 : BallResult = "W"
+                            Case Else : BallResult = "dot"
+                        End Select
+                End Select
+        End Select
+        If BallResult <> "W" Then
+            WktIndex = 0
+        End If
+        If Not WithoutComment Then
+            RandomCommentary(BallResult)
+        End If
     End Sub
     Public Sub RandomCommentary(ShortResult As String, Optional CustomFig As Boolean = False)
         Select Case ShortResult
@@ -1418,9 +1548,16 @@ Public NotInheritable Class MainPage
                             Case Else : AddNewComment(vbNewLine & "Sometimes, it gets difficult to play under the lights. And that might have been one of the reasons for this defeat of " & BattingTeam.Text & ". The captain of the winning side said that it is always good to be batting first in a day-night game. While the captain of the losing side" & CaptainName2(BattingTeam.Text) & " said that his team just couldn't chase the target and it was not a huge one to be accused either." & vbNewLine)
                         End Select
                     Else
-                        If Balls >= TotalBalls / 3 Then
+                        If Balls >= TotalBalls / 2 Then
                             Dim expScore As Integer
-                            expScore = GetWASPscore()
+                            Select Case Wickets
+                                Case Is < 4
+                                    expScore = Runs + Math.Round(RunRate.Text * 4 / 3 * (TotalBalls - Balls) / 6)
+                                Case Is > 6
+                                    expScore = Runs + Math.Round(RunRate.Text * 2 / 3 * (TotalBalls - Balls) / 6)
+                                Case Else
+                                    expScore = RunRate.Text * TotalBalls / 6
+                            End Select
                             Select Case expScore
                                 Case Is >= Tgt
                                     MatchResult = BattingTeam.Text & " won by " & WriteStr((expScore - Tgt + 1), "run") & " <D/L>"
@@ -1447,7 +1584,7 @@ Public NotInheritable Class MainPage
                     End If
                 Case Else
                     MatchResult = "Match TIED"
-                    AddNewComment(vbNewLine & "Wow! It was a great breathtaking game of cricket. What a comeback we just witnessed but they just couldn't convert it into any satisfactory result. Both the teams deserved to win the match but it probably had to be a game in history." & vbNewLine)
+                    AddNewComment(vbNewLine & "Wow! It was a great breathtaking game of cricket. What a comeback we just witnessed but they just couldn't convert it into any satisfactory result. Both the teams deserved to win the match but it was probably had to be a game in history." & vbNewLine)
                     Update2.Text = ""
             End Select
             MatchSummary = MatchSummary & FirstInning & vbNewLine & BattingTeam.Text & ": " & Score.Text & " in " & Overs.Text & " overs" & vbNewLine & MatchResult
@@ -1674,35 +1811,17 @@ Public NotInheritable Class MainPage
                     BattingTeam.Text = TossW
                     BowlingTeam = TossL
                 End If
-                InningNum += 1
+                lblPjtTgt.Text = "Target"
                 Tgt = Runs + 1
                 Tgt1 = 5 * Tgt / 4
                 Tgt2 = 3 * Tgt / 4
                 RunsBeforeOver = 0
                 WicketsBeforeOver = 0
-                RequiredRate = Tgt * 6 / TotalBalls
+                PjtTgt.Text = Tgt
+                InningNum += 1
                 Runs = 0
                 Wickets = 0
                 Balls = 0
-                WASPscore = GetWASPscore()
-                Dim WASPpercent As Integer
-                If WASPscore > Tgt1 Then
-                    WASPpercent = Math.Round(75 + (WASPscore - Tgt) * (Balls / TotalBalls), 0)
-                ElseIf WASPscore < Tgt2 Then
-                    WASPpercent = Math.Round(25 + (WASPscore - Tgt) * (Balls / TotalBalls), 0)
-                ElseIf Runs >= Tgt Then
-                    WASPpercent = 100
-                Else
-                    WASPpercent = Math.Round(50 + (WASPscore - Tgt) * 10 * (Balls / TotalBalls), 0)
-                End If
-                If WASPpercent > 100 Then
-                    WASP.Text = "100"
-                ElseIf WASPpercent < 0 Then
-                    WASP.Text = "0"
-                Else
-                    WASP.Text = WASPpercent
-                End If
-                WASP.Text = WASP.Text & "% (Tgt " & Tgt & ")"
                 WktCont = 0
                 WktCont2 = 0
                 Score.Text = "0/0"
@@ -1716,9 +1835,9 @@ Public NotInheritable Class MainPage
                 PlayRandX.Visibility = Windows.UI.Xaml.Visibility.Visible
                 Update2.Text = BattingTeam.Text & " need " & WriteStr(Tgt, "run") & " in " & TotalBalls & " balls at " & WriteStr(Math.Round(Tgt * 6 / TotalBalls, 2), "run") & " per over"
                 Select Case TypeofPitch
-                    Case 3 : Update1.Text = "All Set. Great batting conditions"
-                    Case 4 : Update1.Text = "Up for chase. There is no devil in the pitch"
-                    Case 5 : Update1.Text = "Bowlers are delighted. Pitch has played her part"
+                    Case 0 : Update1.Text = "All Set. Great batting conditions"
+                    Case 1 : Update1.Text = "Up for chase. There is no devil in the pitch"
+                    Case 2 : Update1.Text = "Bowlers are delighted. Pitch has played her part"
                 End Select
             ElseIf btnAction.Content = "Play Random" Then
                 NewRun = 0
@@ -1765,113 +1884,5 @@ Public NotInheritable Class MainPage
             End If
         End If
     End Sub
-    Public Sub RandomResult(Optional WithoutComment As Boolean = False)
-        CalculateChances(True)
-        Select Case Randomizer.Next(1000)
-            Case WideChanceFrom To WideChanceTo : BallResult = "wd"
-            Case NoBallChanceFrom To NoBallChanceTo : BallResult = "nb"
-            Case ByeChanceFrom : BallResult = "b"
-            Case Wide4ChanceFrom To Wide4ChanceTo : BallResult = "4wd"
-            Case FiveChanceFrom : BallResult = "5"
-            Case DeadBallChanceFrom To DeadBallChanceTo : BallResult = "db"
-            Case AppealChanceFrom To AppealChanceTo : BallResult = "a/f"
-            Case ThreeChanceFrom To ThreeChanceTo : BallResult = "3"
-            Case SingleChanceFrom To SingleChanceTo : BallResult = "1"
-            Case DoubleChanceFrom To DoubleChanceTo : BallResult = "2"
-            Case FourChanceFrom To FourChanceTo : BallResult = "4"
-            Case SixChanceFrom To SixChanceTo : BallResult = "6"
-            Case WicketChanceFrom To WicketChanceTo : BallResult = "W"
-            Case Else : BallResult = "dot"
-        End Select
-        If BallResult <> "W" Then
-            WktIndex = 0
-        End If
-        If Not WithoutComment Then
-            RandomCommentary(BallResult)
-        End If
-    End Sub
-
-    Public Sub CalculateChances(Optional CalledByRes As Boolean = False, Optional BatsmanAverage As Integer = 0, Optional BowlerAverage As Integer = 0, Optional BatsmanStrikeRate As Integer = 0, Optional BowlerEconomy As Integer = 0)
-        If BatsmanAverage = 0 Then
-            BatsmanAverage = (25 + ((TotalBalls - 60) / 10)) * ((4 - (Wickets / 3)) / 4)
-        End If
-        If BowlerAverage = 0 Then
-            BowlerAverage = 35 - ((300 - TotalBalls) / 15)
-        End If
-        If BatsmanStrikeRate = 0 Then
-            BatsmanStrikeRate = 80 + ((300 - TotalBalls) / 3)
-        End If
-        If BowlerEconomy = 0 Then
-            BowlerEconomy = (6 / 100) * (80 + ((300 - TotalBalls) / 3))
-        End If
-        'Chance means n times per 1000 balls
-        BatsmanOutChance = (10 * BatsmanStrikeRate) / BatsmanAverage  'Solving 1000 / (BatsmanAverage * (100 / BatsmanStrikeRate))
-        BowlerStrikeRate = (BowlerEconomy * 50) / 3 'Solving (BowlerEconomy * 100) / 6
-        BowlerOutChance = (10 * BowlerStrikeRate) / BowlerAverage 'Solving 1000 / (BowlerAverage * (100 / BowlerStrikeRate))
-        If RequiredRate > 18 Then
-            RequiredRate = 18
-        ElseIf RequiredRate < 0.5 * RunRate.Text And InningNum = 2 Then
-            RequiredRate *= 1.5
-        End If
-        Dim TotalRuns As Integer = ((BatsmanStrikeRate + BowlerStrikeRate) * RequiredRate * 1000) / (12 * (80 + ((300 - TotalBalls) / 3)))
-        Dim PercentRunsBoundaries As Integer = 34 + ((RequiredRate) * 3)
-        PercentRuns6 = PercentRunsBoundaries * (RequiredRate / 38)
-        PercentRuns4 = PercentRunsBoundaries - PercentRuns6
-        PercentRuns3 = 3
-        PercentRunsExtra = 2
-        PercentRuns2 = (100 - (PercentRunsExtra + PercentRuns3 + PercentRuns4 + PercentRuns6)) / 3
-        PercentRuns1 = 100 - (PercentRunsExtra + PercentRuns3 + PercentRuns4 + PercentRuns6 + PercentRuns2)
-        FourChance = (PercentRuns4 * TotalRuns) / 400
-        SixChance = (PercentRuns6 * TotalRuns) / 600
-        ThreeChance = (PercentRuns3 * TotalRuns) / 300
-        DoubleChance = (PercentRuns2 * TotalRuns) / 200
-        ExtraChance = (PercentRunsExtra * TotalRuns) / 100
-        SingleChance = (PercentRuns1 * TotalRuns) / 100
-        Dim RemChances As Integer = 1000 - (FourChance + SixChance + ThreeChance + DoubleChance + ExtraChance + SingleChance)
-        WicketChance = ((BatsmanOutChance + BowlerOutChance) / 40) * ((((RequiredRate / 3) + ((TypeofPitch * 9) / 10)) ^ 2) / 2)
-        DotChance = (160 / (BatsmanStrikeRate + BowlerStrikeRate)) * (500 + 80 * (((TypeofPitch * 9) / 10) - (2 * (RequiredRate / 3))))
-
-        If FreeHit And CalledByRes Then
-            SixChance *= 4
-            FourChance *= 3
-            WicketChance /= 20
-        End If
-
-        WideChanceFrom = 0
-        WideChanceTo = (ExtraChance * (3 / 5))
-        NoBallChanceFrom = (ExtraChance * (3 / 5)) + 1
-        NoBallChanceTo = (ExtraChance * (3 / 5)) + 2
-        ByeChanceFrom = (ExtraChance * (3 / 5)) + 3
-        ' ByeChanceTo 
-        Wide4ChanceFrom = (ExtraChance * (3 / 5)) + 4
-        Wide4ChanceTo = (ExtraChance * (3 / 5)) + 5
-        FiveChanceFrom = (ExtraChance * (3 / 5)) + 6
-        ' FiveChanceTo 
-        DeadBallChanceFrom = (ExtraChance * (3 / 5)) + 7
-        DeadBallChanceTo = ExtraChance - 1
-        AppealChanceFrom = ExtraChance
-        AppealChanceTo = ExtraChance + 28
-        ThreeChanceFrom = ExtraChance + 29
-        ThreeChanceTo = ExtraChance + 28 + ThreeChance
-        SingleChanceFrom = ExtraChance + 29 + ThreeChance
-        SingleChanceTo = ExtraChance + 28 + ThreeChance + SingleChance
-        DoubleChanceFrom = ExtraChance + 29 + ThreeChance + SingleChance
-        DoubleChanceTo = ExtraChance + 28 + ThreeChance + SingleChance + DoubleChance
-        FourChanceFrom = ExtraChance + 29 + ThreeChance + SingleChance + DoubleChance
-        FourChanceTo = ExtraChance + 28 + ThreeChance + SingleChance + DoubleChance + FourChance
-        SixChanceFrom = ExtraChance + 29 + ThreeChance + SingleChance + DoubleChance + FourChance
-        SixChanceTo = ExtraChance + 28 + ThreeChance + SingleChance + DoubleChance + FourChance + SixChance
-        WicketChanceFrom = ExtraChance + 29 + ThreeChance + SingleChance + DoubleChance + FourChance + SixChance
-        WicketChanceTo = ExtraChance + 28 + ThreeChance + SingleChance + DoubleChance + FourChance + SixChance + WicketChance
-    End Sub
-
-    Public Function GetWASPscore() As Integer
-        CalculateChances()
-        RemBalls = TotalBalls - Balls
-        If (WicketChance * RemBalls) / 1000 > 10 - Wickets Then
-            RemBalls = ((10 - Wickets) * 1000) / WicketChance
-        End If
-        GetWASPscore = Runs + (((SingleChance + ExtraChance) + (2 * DoubleChance) + (3 * ThreeChance) + (4 * FourChance) + (6 * SixChance)) * (RemBalls / 1000))
-    End Function
-    '#End Region
+#End Region
 End Class
