@@ -1,0 +1,25 @@
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\x86\Release\Cricket Simulator.exe
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\x86\Release\Cricket Simulator.pdb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\x86\Release\Cricket_Simulator.xml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\x86\Release\resources.pri
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\x86\Release\AppxManifest.xml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\x86\Release\Cricket Simulator.build.appxrecipe
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\App.g.i.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\App.g.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\MainPage.g.i.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\MainPage.g.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\Common\StandardStyles.g.i.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\Common\StandardStyles.g.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\XamlTypeInfo.g.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\App.xaml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\MainPage.xaml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\Common\StandardStyles.xaml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\Cricket Simulator.exe
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\Cricket_Simulator.xml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\Cricket Simulator.pdb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\priconfig.xml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\layout.resfiles
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\resources.resfiles
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\pri.resfiles
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\LanguageQualifiers.txt
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\x86\Release\ProjectArchitectures.txt

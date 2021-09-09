@@ -1,0 +1,50 @@
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\Release\Cricket Simulator.exe
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\Release\Cricket Simulator.pdb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\Release\Cricket_Simulator.xml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\Release\resources.pri
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\Release\AppxManifest.xml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\Release\Cricket Simulator.build.appxrecipe
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\App.g.i.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\App.g.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\MainPage.g.i.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\MainPage.g.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\Common\StandardStyles.g.i.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\Common\StandardStyles.g.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\XamlTypeInfo.g.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\App.xaml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\MainPage.xaml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\Common\StandardStyles.xaml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\Cricket Simulator.exe
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\Cricket_Simulator.xml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\Cricket Simulator.pdb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\priconfig.xml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\layout.resfiles
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\resources.resfiles
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\pri.resfiles
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\LanguageQualifiers.txt
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Release\ProjectArchitectures.txt
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Release\Cricket Simulator.exe
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Release\Cricket Simulator.pdb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Release\Cricket_Simulator.xml
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Release\resources.pri
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Release\AppxManifest.xml
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Release\Cricket Simulator.build.appxrecipe
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\App.g.i.vb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\App.g.vb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\MainPage.g.i.vb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\MainPage.g.vb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\Common\StandardStyles.g.i.vb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\Common\StandardStyles.g.vb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\XamlTypeInfo.g.vb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\App.xaml
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\MainPage.xaml
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\Common\StandardStyles.xaml
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\Cricket Simulator.exe
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\Cricket_Simulator.xml
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\Cricket Simulator.pdb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\priconfig.xml
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\layout.resfiles
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\resources.resfiles
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\pri.resfiles
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\LanguageQualifiers.txt
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Release\ProjectArchitectures.txt

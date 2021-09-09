@@ -1,0 +1,89 @@
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\Debug\Cricket Simulator.exe
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\Debug\Cricket Simulator.pdb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\Debug\Cricket_Simulator.xml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\Debug\resources.pri
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\Debug\AppxManifest.xml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\Debug\Cricket Simulator.build.appxrecipe
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\App.g.i.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\App.g.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\Common\StandardStyles.g.i.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\Common\StandardStyles.g.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\XamlTypeInfo.g.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\App.xaml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\Common\StandardStyles.xaml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\Cricket Simulator.exe
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\Cricket_Simulator.xml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\Cricket Simulator.pdb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\priconfig.xml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\layout.resfiles
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\resources.resfiles
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\pri.resfiles
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\LanguageQualifiers.txt
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\ProjectArchitectures.txt
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\priconfig.xml.intermediate
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\layout.resfiles.intermediate
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\resources.resfiles.intermediate
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\pri.resfiles.intermediate
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\MainPage.g.i.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\MainPage.g.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\Debug\MainPage.xaml
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\Cricket Simulator.exe
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\Cricket Simulator.pdb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\Cricket_Simulator.xml
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\resources.pri
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\AppxManifest.xml
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\Cricket Simulator.build.appxrecipe
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\App.g.i.vb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\App.g.vb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\MainPage.g.i.vb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\MainPage.g.vb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\Common\StandardStyles.g.i.vb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\Common\StandardStyles.g.vb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\XamlTypeInfo.g.vb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\App.xaml
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\MainPage.xaml
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\Common\StandardStyles.xaml
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\Cricket Simulator.exe
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\Cricket_Simulator.xml
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\Cricket Simulator.pdb
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\priconfig.xml.intermediate
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\layout.resfiles.intermediate
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\resources.resfiles.intermediate
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\pri.resfiles.intermediate
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\priconfig.xml
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\layout.resfiles
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\resources.resfiles
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\pri.resfiles
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\LanguageQualifiers.txt
+E:\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\ProjectArchitectures.txt
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\Cricket Simulator.exe
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\Cricket Simulator.pdb
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\Cricket_Simulator.xml
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\resources.pri
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\AppxManifest.xml
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\bin\Debug\Cricket Simulator.build.appxrecipe
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\App.g.i.vb
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\App.g.vb
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\MainPage.g.i.vb
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\MainPage.g.vb
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\Common\StandardStyles.g.i.vb
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\Common\StandardStyles.g.vb
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\XamlTypeInfo.g.vb
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\App.xaml
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\MainPage.xaml
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\Common\StandardStyles.xaml
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\Cricket Simulator.exe
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\Cricket_Simulator.xml
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\Cricket Simulator.pdb
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\priconfig.xml.intermediate
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\layout.resfiles.intermediate
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\resources.resfiles.intermediate
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\pri.resfiles.intermediate
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\priconfig.xml
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\layout.resfiles
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\resources.resfiles
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\pri.resfiles
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\ProjectArchitectures.txt
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\qualifiers.txt
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\qualifiers.txt.intermediate
+D:\Corporate\ANIco.in\Windows Store Apps\Cricket Simulator\Cricket Simulator\obj\Debug\MultipleQualifiersPerDimensionFound.txt

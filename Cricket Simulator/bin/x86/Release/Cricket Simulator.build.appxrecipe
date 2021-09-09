@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DEN_OF_DEVIL</Machine>
+    <WindowsUser>Ajay Raghav</WindowsUser>
+    <SolutionConfiguration>Release|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\x86\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\x86\Release\Cricket Simulator.exe">
+      <PackagePath>Cricket Simulator.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\x86\Release\Cricket Simulator.pdb">
+      <PackagePath>Cricket Simulator.pdb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\x86\Release\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\x86\Release\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\x86\Release\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\x86\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,29 @@
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\ARM\Debug\Cricket Simulator.exe
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\ARM\Debug\Cricket Simulator.pdb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\ARM\Debug\Cricket_Simulator.xml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\ARM\Debug\resources.pri
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\ARM\Debug\AppxManifest.xml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\bin\ARM\Debug\Cricket Simulator.build.appxrecipe
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\App.g.i.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\App.g.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\Common\StandardStyles.g.i.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\Common\StandardStyles.g.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\MainPage.g.i.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\MainPage.g.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\XamlTypeInfo.g.vb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\App.xaml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\Common\StandardStyles.xaml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\MainPage.xaml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\Cricket Simulator.exe
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\Cricket_Simulator.xml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\Cricket Simulator.pdb
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\priconfig.xml.intermediate
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\layout.resfiles.intermediate
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\resources.resfiles.intermediate
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\pri.resfiles.intermediate
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\priconfig.xml
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\layout.resfiles
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\resources.resfiles
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\pri.resfiles
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\LanguageQualifiers.txt
+E:\ANIco.in\Modern UI Projects\Cricket Simulator\Cricket Simulator\obj\ARM\Debug\ProjectArchitectures.txt

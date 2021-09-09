@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="36248ANIco.in.CricketSimulator" Publisher="CN=1ED90121-0E00-43DD-B6A0-52121779E830" Version="1.0.2.35" />
+  <Properties>
+    <DisplayName>Cricket Simulator</DisplayName>
+    <PublisherDisplayName>ANIco.in</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Cricket_Simulator.App">
+      <VisualElements DisplayName="Cricket Simulator" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="An app designed to have fun with random (or custom) cricket match scenarios with exclusive real-like commentary." ForegroundText="light" BackgroundColor="#012104">
+        <DefaultTile ShowName="noLogos" WideLogo="Assets\WideLogo.png" ShortName="CS" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#012104" />
+        <InitialRotationPreference>
+          <Rotation Preference="portrait" />
+          <Rotation Preference="landscape" />
+          <Rotation Preference="portraitFlipped" />
+          <Rotation Preference="landscapeFlipped" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+</Package>
